@@ -11,8 +11,6 @@ def load_data(file_path):
     elif file_path.endswith('.xlsx') or file_path.endswith('.xls'):
         data = pd.read_excel(file_path)
     elif file_path.endswith('.db'):
-        # Load data from SQL database
-        # Implement code to connect to SQL database and fetch data
         pass
     else:
         raise ValueError("Invalid file format. Only CSV, Excel, and SQL databases are supported.")
